@@ -2,7 +2,7 @@ from collections import Counter
 
 import pandas as pd
 
-from db_utils import get_category_keywords, add_keywords
+from db_utils import get_category_keywords, add_keyword
 
 pd.set_option('display.max_colwidth', None)
 
@@ -80,7 +80,7 @@ class ManualCorrection:
             remember = input(f"Remember to map transactions with {filter_column} = {filter_value}"
                              f"with Category = {new_category} (Y/n)?").lower() == 'y'
             if remember:
-                add_keywords(new_category, filter_column, filter_value)
+                add_keyword(new_category, filter_column, filter_value)
 
         self.uncategorized_df.drop(index=indices, inplace=True)
 

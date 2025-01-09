@@ -7,7 +7,8 @@ from models import Base, Category, validate_model
 
 
 class DatabaseHandler:
-    def __init__(self, db_url: str = get_file_content('../local_files/sql_alchemy_url.txt')):
+    def __init__(self, db_url: str = get_file_content('/Users/piyushupreti/Documents/Projects/expense-classifier'
+                                                      '/local_files/sql_alchemy_url.txt')):
         self.engine = create_engine(db_url)
         Base.metadata.create_all(self.engine)
         self.SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=self.engine)
@@ -28,6 +29,7 @@ class DatabaseHandler:
         with self.SessionLocal() as session:
             result = session.query(select(model))
         return result.all()
+
 
 
 # Example Usage

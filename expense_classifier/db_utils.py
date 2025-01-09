@@ -37,8 +37,24 @@ def get_category_keywords() -> dict:
     return mapping
 
 
-def add_keywords(category, kw_column, kw_value):
+def add_keyword(category, kw_column, kw_value):
     pass
+
+
+def update_keywords(category_mapping: dict[str, set]):
+
+    with db_handler.SessionLocal() as session:
+        for category, new_keywords in category_mapping.items():
+            record = session.query(Category).filter_by(name=category).first()
+            if record:
+                existing_keywords = set(record.keywords or [])
+                updated_keywords = list(existing_keywords | new_keywords)
+                record.keywords = updated_keywords
+        session.commit()
+    print("Keywords updated successfully.")
+
+
+
 
 
 
