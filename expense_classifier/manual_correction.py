@@ -2,7 +2,7 @@ from collections import Counter
 
 import pandas as pd
 
-from db_utils import get_category_keywords, add_keyword
+from expense_classifier.db_utils import get_category_keywords, add_keyword
 
 pd.set_option('display.max_colwidth', None)
 

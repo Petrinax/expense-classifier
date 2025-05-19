@@ -1,14 +1,14 @@
 import pandas as pd
 
-from db_utils import get_category_keywords, update_keywords
+from expense_classifier.db_utils import get_category_keywords, update_keywords
 
 
 class FileCorrection:
-    FILE_NAME = "/Users/piyushupreti/Documents/Projects/expense-classifier/datasets/uncategorized_data_correction.csv"
     ALL_CATEGORIES: dict = get_category_keywords()
 
-    def __init__(self, data: pd.DataFrame):
+    def __init__(self, data: pd.DataFrame, file_name: str):
         self.df = data
+        self.file_name = file_name
         self.uncategorized_df: pd.DataFrame = self.df[self.df['Category'] == 'Uncategorized'].copy()
         self.already_categorized_data: pd.DataFrame = self.df[self.df['Category'] != 'Uncategorized']
         self.categories = list(self.ALL_CATEGORIES.keys())
@@ -23,7 +23,7 @@ class FileCorrection:
     def create_file_from_uncategorized_data(self):
         self.uncategorized_df['Keyword'] = ''
         self.uncategorized_df['Category'] = ''
-        self.uncategorized_df.to_csv(self.FILE_NAME)
+        self.uncategorized_df.to_csv(self.file_name)
 
     def get_most_used_categories(self):
         self.category_count: dict = self.already_categorized_data['Category'].value_counts(sort=True, ascending=False).to_dict()
@@ -39,15 +39,16 @@ class FileCorrection:
         instructions = f"""
                 Instructions:
 
-                - File created for unrecognized data. Path: {self.FILE_NAME}.
+                - File created for unrecognized data. Path: {self.file_name}
                 - Update the categories for relevant records. (Skip those you are unsure of).
                 - Additionally you can add keywords to look for that particular category.
 
                 """
         valid_categories_by_count = '\n- '.join(['List of accepted Categories [Case Sensitive]:\n'] + sorted_categories)
-        instructions_2 = """
+        instructions_2 = f"""
         
                 - Edit the same file in same location with valid category. Once completed, press 'p'.
+                - File Path: {self.file_name}
                 - Press any other key to cancel the step.
                 
         """
@@ -57,9 +58,9 @@ class FileCorrection:
         if completion_flag.lower() != 'p':
             raise KeyboardInterrupt(" File correction step cancelled manually. Exiting pipeline.")
 
-        self.corrected_df = pd.read_csv(self.FILE_NAME, index_col=0)
+        self.corrected_df = pd.read_csv(self.file_name, index_col=0)
         self.corrected_df = self.corrected_df.dropna(subset=['Category'])
-        print("get_records_with_correction COMPLETED")
+        # print("get_records_with_correction COMPLETED")
 
 
     def process_corrected_file(self):
@@ -85,11 +86,17 @@ class FileCorrection:
 
     def review_and_update_category_mappings(self):
 
-        print("Extracted Keywords from corrected file:")
-        extracted_keywords: list[tuple] = list(self.category_map.items())
-        print('\n'.join([f"{entry[0]}: {entry[1]}" for entry in extracted_keywords]))
-        if input("Do you want to map these keywords for future classification? (Y/n)").lower() == 'y':
-            update_keywords(self.category_map)
+        extracted_keywords: list[tuple] = []
+        for kw in self.category_map.items():
+            if kw[1]:
+                extracted_keywords.append(kw)
+        if extracted_keywords:
+            print("Extracted Keywords from corrected file:")
+            print('\n'.join([f"{entry[0]}: {entry[1]}" for entry in extracted_keywords]))
+            if input("Do you want to map these keywords for future classification? (Y/n)").lower() == 'y':
+                update_keywords(self.category_map)
+        else:
+            print("No keywords provided from corrected file. Skipping keyword update.")
 
     def update_source_df(self):
         df_cleaned = self.corrected_df.dropna(subset=['Category'])

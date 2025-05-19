@@ -1,7 +1,7 @@
 import pandas as pd
 
-from database import select, DatabaseHandler
-from models import Category
+from expense_classifier.database import select, DatabaseHandler
+from expense_classifier.models import Category
 
 db_handler = DatabaseHandler()
 

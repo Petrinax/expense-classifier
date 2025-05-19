@@ -3,7 +3,7 @@ from sqlalchemy import create_engine, insert, select, inspect
 from sqlalchemy.orm import sessionmaker
 
 from expense_classifier.common_utils import get_file_content
-from models import Base, Category, validate_model
+from expense_classifier.models import Base, Category, validate_model
 
 
 class DatabaseHandler:
