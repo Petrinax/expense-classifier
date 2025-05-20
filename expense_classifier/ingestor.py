@@ -28,7 +28,7 @@ class Ingestor:
         """Loads account statement data from CSV or Excel."""
         if self.file_path.endswith('.csv'):
             return pd.read_csv(self.file_path, dtype=self.data_types)
-        elif self.file_path.endswith('.xlsx'):
+        elif self.file_path.endswith(('.xlsx', '.xls')):
             return pd.read_excel(self.file_path, dtype=self.data_types)
         else:
             raise ValueError("Unsupported file format. Only CSV and XLSX are allowed.")
@@ -37,16 +37,21 @@ class Ingestor:
         """
         Cleans the data
         - Extract transactional columns (e.g., date, description, amount).
+        - Remove records with empty values
         """
+
+        # Remove rows where all fields are empty
+        self.df = self.df.dropna(how='all')
+
         # Format DateTime
-        self.df[self.date_col] = pd.to_datetime(self.df[self.date_col], dayfirst=True).dt.date
+        self.df[self.date_col] = pd.to_datetime(self.df[self.date_col], dayfirst=True)
 
         # Validate that only one of 'credit' or 'debit' has a value
-        self.df['valid'] = ((self.df[self.credit_col].notna() & self.df[self.debit_col].isna()) | (
-                self.df[self.credit_col].isna() & self.df[self.debit_col].notna()))
+        # self.df['valid'] = ((self.df[self.credit_col].notna() & self.df[self.debit_col].isna()) | (
+        #         self.df[self.credit_col].isna() & self.df[self.debit_col].notna()))
 
-        self.invalid_records = self.df[~self.df['valid']]
-        self.df = self.df[self.df['valid']]
+        # self.invalid_records = self.df[~self.df['valid']]
+        # self.df = self.df[self.df['valid']]
 
         self.df[self.credit_col] = self.df[self.credit_col].str.replace(r'[^\d.-]', '', regex=True).str.strip()
 
@@ -67,7 +72,7 @@ class Ingestor:
         })
         self.df = self.df[['Date', 'Credit', 'Debit', self.amount_col, 'Description']]
 
-        self.df[self.desc_col] = self.df[self.desc_col].str.lower()
+        self.df['Description'] = self.df['Description'].str.lower()
 
     def get_data(self):
         return self.df

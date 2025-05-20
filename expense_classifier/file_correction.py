@@ -23,7 +23,9 @@ class FileCorrection:
     def create_file_from_uncategorized_data(self):
         self.uncategorized_df['Keyword'] = ''
         self.uncategorized_df['Category'] = ''
-        self.uncategorized_df.to_csv(self.file_name)
+
+        file_correction_df = self.uncategorized_df.drop('Prompt', axis=1, errors='ignore')
+        file_correction_df.to_csv(self.file_name)
 
     def get_most_used_categories(self):
         self.category_count: dict = self.already_categorized_data['Category'].value_counts(sort=True, ascending=False).to_dict()
@@ -47,15 +49,21 @@ class FileCorrection:
         valid_categories_by_count = '\n- '.join(['List of accepted Categories [Case Sensitive]:\n'] + sorted_categories)
         instructions_2 = f"""
         
-                - Edit the same file in same location with valid category. Once completed, press 'p'.
+                - Edit the same file in same location with valid category. Once completed, press any key to continue.
                 - File Path: {self.file_name}
-                - Press any other key to cancel the step.
+                - Press 'q' to cancel the step.
                 
         """
         print(instructions)
         print(valid_categories_by_count)
         completion_flag = input(instructions_2)
-        if completion_flag.lower() != 'p':
+
+        # Prevent accidental clicks on enter key.
+        
+        if completion_flag.lower() == '':
+            completion_flag = input()
+            
+        if completion_flag.lower() == 'q':
             raise KeyboardInterrupt(" File correction step cancelled manually. Exiting pipeline.")
 
         self.corrected_df = pd.read_csv(self.file_name, index_col=0)

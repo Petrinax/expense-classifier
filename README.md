@@ -1,5 +1,11 @@
 # expense-classifier
+# Expense Classifier
 
+A Python package for classifying expenses from bank statements.
+
+## Installation
+
+Install directly from GitHub:
 ## App Structure
 ```
 expense_classifier/

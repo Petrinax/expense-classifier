@@ -126,7 +126,37 @@ celerybeat.pid
 
 # SageMath parsed files
 *.sage.py
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Database files
+*.db
+*.sqlite3
+
+# Logs
+*.log
+
+# Local configuration
+.env
 # Environments
 .env
 .venv

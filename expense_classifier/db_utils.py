@@ -26,6 +26,27 @@ default_categories = {
     "Unknown": []
 }
 
+# Sample desc for LLM prompts
+category_descriptions = [
+    "Transactions for rent, housing, or utilities like electricity or water bills. Keywords: rent, swaroop",
+    "Shopping-related transactions including online or retail stores. Keywords: amazon, myntra, reliance, ajio, decathlon, croma, vouchagram, bata, centro",
+    "Grocery purchases or quick commerce platforms. Keywords: swiggy.sto, swiggyinstamart, swiggy.instamart, swiggystores, swiggy.stores, zepto, geddit, blinkit, grofers",
+    "Spending on food delivery or restaurants. Keywords: swiggy, swiggyupi, swiggyfood",
+    "Fuel or petrol-related vehicle expenses. Keywords: petrol, fuel",
+    "Health, fitness, or personal development spending. Keywords: [empty]",
+    "Transportation services like ride sharing or public transport. Keywords: uber, uberrides, bmtc, ola, olacabs, metro",
+    "Entertainment or leisure expenses. Keywords: [empty]",
+    "Internet, mobile, or OTT subscription bills. Keywords: [empty]",
+    "Investment or savings-related transactions. Keywords: bsestarmfrzp, groww, ipo.",
+    "Bank charges, interest, or other financial fees. Keywords: [empty]",
+    "Gifts or money transfers to friends/family. Keywords: [empty]",
+    "Splitwise settlements or money lent/borrowed. Keywords: divyanshi, ankur, aksht, aksht jain, anvesha",
+    "Flight or airline ticket bookings. Keywords: [empty]",
+    "Transfers between own accounts or self. Keywords: 8765830338@, piyush upreti",
+    "General expenses that don't fit other categories. Keywords: [empty]",
+    "Unknown or uncategorized transactions. Keywords: [empty]"
+]
+
 
 def get_category_keywords() -> dict:
 

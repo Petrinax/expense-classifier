@@ -21,8 +21,11 @@ class Classifier:
                 self.category_patterns[category] = None
 
     def classify(self, df: pd.DataFrame):
-        """Classifies transactions based on predefined rules."""
-        df['Category'] = df['Description'].apply(self._apply_rules)
+        """Classifies transactions based on predefined rules.
+        Uses 'Prompt' field for keyword search if available, otherwise uses 'Description' field."""
+
+        search_field = 'Prompt' if 'Prompt' in df.columns else 'Description'
+        df['Category'] = df[search_field].apply(self._apply_rules)
         return df
 
     def _apply_rules(self, description):
