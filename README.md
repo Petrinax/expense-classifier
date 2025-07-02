@@ -5,7 +5,27 @@ A Python package for classifying expenses from bank statements.
 
 ## Installation
 
-Install directly from GitHub:
+**Requirements:**
+- Python 3.8 or higher
+- Recommended: Use a virtual environment (e.g., `python -m venv venv`)
+
+### Install from PyPI (if available)
+...TBD
+
+### Install directly from GitHub
+```bash
+pip install git+https://github.com/petrinax/expense-classifier.git
+```
+
+### Development install (editable mode)
+Clone the repository and install in editable mode:
+```bash
+git clone https://github.com/petrinax/expense-classifier.git
+cd expense-classifier
+pip install -e .
+```
+
+---
 
 ## Usage
 
@@ -139,7 +159,6 @@ expense-classifier/
 │   ├── common_utils.py           # Common helper functions
 │   ├── database.py               # Database handler (SQLAlchemy)
 │   ├── db_utils.py               # Category/keyword DB utilities
-│   ├── desc.txt                  # Example transaction descriptions
 │   ├── file_correction.py        # File-based manual correction logic
 │   ├── ingestor.py               # Data ingestion and cleaning
 │   ├── main.py                   # CLI entry point
