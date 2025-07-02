@@ -1,6 +1,43 @@
 [build-system]
-requires = ["setuptools>=42", "wheel"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "expense-classifier"
+description = "A tool for classifying expenses from bank statements."
+readme = "README.md"
+requires-python = ">=3.8"
+dynamic = ["version"]
+license = {text = "MIT"}
+authors = [
+    {name = "Piyush Upreti", email = "meslour@gmail.com"}
+]
+dependencies = [
+    "alembic==1.14.0",
+    "pandas==2.2.3",
+    "psycopg2-binary==2.9.10",
+    "SQLAlchemy==2.0.36",
+    "openpyxl==3.1.5",
+    "transformers~=4.51.3",
+    "pyyaml",
+    "numpy"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console"
+]
+
+[project.scripts]
+expense-classifier = "expense_classifier.main:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "expense_classifier.__version__"}
 
 [tool.black]
 line-length = 88

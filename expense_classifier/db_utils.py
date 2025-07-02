@@ -23,9 +23,24 @@ default_categories = {
     "Flights Tickets": [],
     "Self Transfer": ['8765830338@', 'piyush upreti'],
     "General": [],
-    "Unknown": []
+    "Unknown": [],
+
+
+    'Salary': ['wm global tech'],
+    'Cashback & Refunds': ['ONE97', 'One Ninety Seven'],
+    'Interest on Savings': ['credit interest', 'int.pd'],
+    'Interest on Deposits': ['io for'],
+    'Interest on Investments': [],
+    'Interest on Other Accounts': [],
+    'Dividends': ['npci', 'nach'],
+    'Savings and Investments': [],
+    'Capital Gains': [],
 }
 
+income_categories = {
+
+
+}
 # Sample desc for LLM prompts
 category_descriptions = [
     "Transactions for rent, housing, or utilities like electricity or water bills. Keywords: rent, swaroop",

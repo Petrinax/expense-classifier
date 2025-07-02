@@ -1,3 +1,5 @@
+# NOT IN USE
+
 # import curses
 #
 # def display_menu(stdscr, selected_option):
