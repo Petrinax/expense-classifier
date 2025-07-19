@@ -1,44 +1,17 @@
 # Expense Classifier
 
+## Overview
+A robust, extensible Python solution for automated expense classification, enrichment, and reporting from bank statements. Built to showcase advanced skills in software engineering, data engineering, and system design.
+
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Under%20Development-orange" alt="Under Development"/>
   <img src="https://img.shields.io/badge/ETL-Finance-blue" alt="ETL Finance"/>
   <img src="https://img.shields.io/badge/CLI-Tool-green" alt="CLI Tool"/>
   <img src="https://img.shields.io/badge/Data%20Engineering-pandas-informational" alt="pandas"/>
-  <img src="https://img.shields.io/badge/License-MIT-yellow" alt="MIT License"/>
-  <img src="https://img.shields.io/badge/Python-3.8%2B-blueviolet" alt="Python 3.8+"/>
-  <!-- Add PyPI badge if published -->
+  <img src="https://img.shields.io/badge/Python-3.9%2B-blueviolet" alt="Python 3.9+"/>
+  <!-- TBD: Add PyPI badge-->
 </p>
 
-<p align="center">
-  <b>Automated, extensible pipeline for classifying, enriching, and reporting on bank statement transactions.</b>
-</p>
-
----
-
-## 🔗 Quick Links
-
-- [✨ Features](#-features)
-- [🏗️ Project Architecture](#-project-architecture)
-- [⚙️ How It Works](#-how-it-works)
-- [🛠️ Technology Stack](#-technology-stack)
-- [🧠 Design Decisions](#-design-decisions--engineering-highlights)
-- [🚦 Getting Started](#-getting-started)
-- [💻 CLI Usage](#cli-usage)
-- [🧑‍💻 Programmatic Usage](#programmatic-usage)
-- [🤝 Contributing](#-contributing)
-- [📚 More Documentation](#-more-documentation)
-
----
-
-## 🖼️ Screenshots / Demo
-
-<!--
-Add screenshots, GIFs, or terminal output here to showcase the tool in action.
-Example:
-
-![Demo GIF](local_files/demo.gif)
--->
 
 ---
 
