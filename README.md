@@ -36,16 +36,21 @@ A robust, extensible Python solution for automated expense classification, enric
 ```mermaid
 flowchart TD
     A["User Input (CLI/Script)"] --> B["Ingestor"]
+    B --> J["Checkpoint Store (DB/File)"]
     B --> C["Transformer"]
+    C --> J["Checkpoint Store (DB/File)"]
     C --> D["Paytm Lookup (optional)"]
     D --> E["Classifier"]
+    E --> J["Checkpoint Store (DB/File)"]
     E --> F["File Correction / Manual Correction"]
     F --> G["Database (SQLAlchemy)"]
     F --> H["Reporting/Export"]
     G --> H
     H --> I["Final Output (CSV/DB/Report)"]
     style A fill:#f9f,stroke:#333,stroke-width:2px
-    style I fill:#bbf,stroke:#333,stroke-width:2px
+    style I fill:#bfb,stroke:#333,stroke-width:2px
+    style J fill:#ffa500,stroke:#333,stroke-width:2px
+    style G fill:#ffa500,stroke:#333,stroke-width:2px
 ```
 
 - **Ingestor:** Loads and standardizes raw bank/Paytm files.
