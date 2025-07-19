@@ -9,8 +9,12 @@ A robust, extensible Python solution for automated expense classification, enric
   <a href="https://en.wikipedia.org/wiki/Command-line_interface"><img src="https://img.shields.io/badge/CLI-Tool-green" alt="CLI Tool"/></a>
   <a href="https://pandas.pydata.org/"><img src="https://img.shields.io/badge/Data%20Engineering-pandas-informational" alt="pandas"/></a>
   <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/Python-3.9%2B-blueviolet" alt="Python 3.9+"/></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow" alt="MIT License"/></a>
   <!-- TBD: Add PyPI badge-->
 </p>
+
+**Tags:**  
+`expense-classifier` `ETL` `finance` `data-engineering` `pandas` `SQLAlchemy` `CLI` `bank-statements` `classification` `reporting` `python` `personal-finance` `automation`
 
 
 ---
