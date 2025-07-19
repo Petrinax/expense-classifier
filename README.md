@@ -164,7 +164,7 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 ## 👤 About the Author
 
-**Piyush Uppreti**  
+**Piyush Upreti**  
 Software Engineer | Data Engineer | System Designer
 
 - [LinkedIn](https://www.linkedin.com/in/piyush-upreti/)
