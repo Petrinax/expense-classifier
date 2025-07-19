@@ -1,5 +1,6 @@
 # Expense Classifier
 
+
 ## Overview
 A robust, extensible Python solution for automated expense classification, enrichment, and reporting from bank statements. Built to showcase advanced skills in software engineering, data engineering, and system design.
 
@@ -183,14 +184,11 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 ---
 
 ## 👤 About the Author
-
-**Piyush Upreti**  
-Software Engineer | Data Engineer | System Designer
-
-- [LinkedIn](https://www.linkedin.com/in/piyush-upreti/)
-- [GitHub](https://github.com/petrinax)
-- Email: piyushupreti@gmail.com
-
+<p align="center">
+<a href="https://www.linkedin.com/in/piyush-upreti/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="https://github.com/petrinax"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=piyushupreti@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
+</p>
 ---
 
 ## 📚 More Documentation
