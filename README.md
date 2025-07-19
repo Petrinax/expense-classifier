@@ -1,4 +1,3 @@
-# expense-classifier
 # Expense Classifier
 
 A Python package for classifying expenses from bank statements.

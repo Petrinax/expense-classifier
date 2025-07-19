@@ -1,7 +1,6 @@
 # Personal Finance Management Tool
 
 ## Problem Statement:
-I have a problem statement. If solved, it'll add a lot of value to people.
 
 Assume I have my savings account in 5 banks. While downloading their bank statements, they all have different table format and different conventions for naming transaction descriptions.
 
@@ -19,11 +18,9 @@ I need a tool that can take in the bank statements in spreadsheet/csv file and g
 
 - Finally, create a dashboard to visualize spending, saving patterns, expense structure, balance trends, etc.
 
+--- 
 
 ## Solution:
-Your problem statement is both impactful and feasible, given advancements in data processing and visualization tools. Here's how you can systematically approach this problem, breaking it down into phases:
-
----
 
 **Phase 1: Data Ingestion and Standardization**
 - **Input:** CSV/Excel bank statements from various banks.
