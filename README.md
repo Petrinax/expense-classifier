@@ -4,6 +4,7 @@
 A robust, extensible Python solution for automated expense classification, enrichment, and reporting from bank statements. Built to showcase advanced skills in software engineering, data engineering, and system design.
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Status-Under%20Development-orange" alt="Under Development"/>
   <img src="https://img.shields.io/badge/ETL-Finance-blue" alt="ETL Finance"/>
   <img src="https://img.shields.io/badge/CLI-Tool-green" alt="CLI Tool"/>
   <img src="https://img.shields.io/badge/Data%20Engineering-pandas-informational" alt="pandas"/>
