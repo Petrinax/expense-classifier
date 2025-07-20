@@ -1,8 +1,8 @@
-# Expense Classifier
+# Cashboard: Expense Classifier
 
 
 ## Overview
-A robust, extensible Python solution for automated expense classification, enrichment, and reporting from bank statements. Built to showcase advanced skills in software engineering, data engineering, and system design.
+A robust, extensible Python solution for automated expense classification, enrichment, and reporting from **UPI-heavy bank statements**. Built to learn, adapt, and makes expense tracking a breeze.
 
 <p align="center">
   <a href="https://github.com/petrinax/expense-classifier"><img src="https://img.shields.io/badge/Status-Under%20Development-orange" alt="Under Development"/></a>
@@ -18,17 +18,25 @@ A robust, extensible Python solution for automated expense classification, enric
 `expense-classifier` `ETL` `finance` `data-engineering` `pandas` `SQLAlchemy` `CLI` `bank-statements` `classification` `reporting` `python` `personal-finance` `automation`
 
 
----
+<p align="center">
+<a href="https://www.linkedin.com/in/piyush-upreti/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="https://github.com/petrinax"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=piyushupreti@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
+</p>
+
 
 ## 🚀 Introduction
 
-**Expense Classifier** solves the tedious problem of manually categorizing and analyzing personal or business bank transactions. It ingests raw bank statements, applies intelligent classification (rule-based and AI-ready), enriches data with Paytm UPI lookups, supports manual correction, and exports clean, categorized data for reporting or further analysis.
+**Motivation:**
+
+Bank statements today contain a large number of UPI transactions that are extremely difficult to categorize using any available tools. Cashboard is designed to solve this problem by identifying commonly occurring UPI patterns in bank statements and recognizing recurring transactions of the same category. It memorizes these patterns, making it easier and quicker to categorize transactions over time.
+
+**Cashboard Classifier** solves the tedious problem of manually categorizing and analyzing personal or business bank transactions. It ingests raw bank statements, applies intelligent classification (rule-based and AI-ready), enriches data with Paytm UPI lookups, supports manual correction, and exports clean, categorized data for reporting or further analysis.
 
 - **Problem:** Manual expense tracking is error-prone, time-consuming, and non-scalable.
 - **Solution:** An automated, modular pipeline for ingesting, transforming, classifying, and reporting on financial transactions.
 - **Impact:** Saves hours of manual work, improves financial visibility, and enables data-driven decision making.
 
----
 
 ## ✨ Features
 
@@ -45,7 +53,6 @@ A robust, extensible Python solution for automated expense classification, enric
 
 [See full feature list & usage →](FEATURES.md)
 
----
 
 ## 🏗️ Project Architecture
 
@@ -79,7 +86,6 @@ flowchart TD
 
 [Deep dive: System Architecture →](ARCHITECTURE.md)
 
----
 
 ## ⚙️ How It Works
 
@@ -93,7 +99,7 @@ flowchart TD
 
 [Technical workflow details →](DATA_ENGINEERING.md)
 
----
+
 
 ## 🛠️ Technology Stack
 
@@ -109,7 +115,7 @@ flowchart TD
 | Reporting     | pandas, CSV       | Easy export and downstream analysis                  |
 | Visualization | (Planned)         | Dashboard hooks, visual analytics                    |
 
----
+
 
 ## 🧠 Design Decisions & Engineering Highlights
 
@@ -123,7 +129,7 @@ flowchart TD
 
 [More on design & engineering →](ARCHITECTURE.md)
 
----
+
 
 ## 🚦 Getting Started
 
@@ -169,27 +175,18 @@ pipeline.file_correction()
 final_df, final_table, final_path = pipeline.publish_data()
 ```
 
----
 
 ## 🤝 Contributing
 
 Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines, code style, and how to get started.
 
----
+
 
 ## 📄 License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
----
 
-## 👤 About the Author
-<p align="center">
-<a href="https://www.linkedin.com/in/piyush-upreti/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="https://github.com/petrinax"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-<a href="https://mail.google.com/mail/?view=cm&fs=1&to=piyushupreti@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
-</p>
----
 
 ## 📚 More Documentation
 
@@ -198,5 +195,6 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 - [DATA_ENGINEERING.md](DATA_ENGINEERING.md): ETL/data pipeline technical details
 - [CONTRIBUTING.md](CONTRIBUTING.md): Contribution guidelines
 - [VISUALIZATION.md](VISUALIZATION.md): Reporting and dashboarding options
+
 
 
