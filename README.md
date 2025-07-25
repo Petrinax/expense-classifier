@@ -5,6 +5,11 @@
 A robust, extensible Python solution for automated expense classification, enrichment, and reporting from **UPI-heavy bank statements**. Built to learn, adapt, and makes expense tracking a breeze.
 
 <p align="center">
+  <img src="local_files/ChatGPT Image Jul 20, 2025, 06_59_42 PM.png" alt="Cashboard Expense Classifier Logo" width="300"/>
+</p>
+
+
+<p align="center">
   <a href="https://github.com/petrinax/expense-classifier"><img src="https://img.shields.io/badge/Status-Under%20Development-orange" alt="Under Development"/></a>
   <a href="https://en.wikipedia.org/wiki/Extract,_transform,_load"><img src="https://img.shields.io/badge/ETL-Finance-blue" alt="ETL Finance"/></a>
   <a href="https://en.wikipedia.org/wiki/Command-line_interface"><img src="https://img.shields.io/badge/CLI-Tool-green" alt="CLI Tool"/></a>
@@ -21,7 +26,7 @@ A robust, extensible Python solution for automated expense classification, enric
 <p align="center">
 <a href="https://www.linkedin.com/in/piyush-upreti/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="https://github.com/petrinax"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-<a href="https://mail.google.com/mail/?view=cm&fs=1&to=piyushupreti@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=piyushupreti07@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
 </p>
 
 
