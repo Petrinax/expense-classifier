@@ -5,7 +5,7 @@
 A robust, extensible Python solution for automated expense classification, enrichment, and reporting from **UPI-heavy bank statements**. Built to learn, adapt, and makes expense tracking a breeze.
 
 <p align="center">
-  <img src="local_files/ChatGPT Image Jul 20, 2025, 06_59_42 PM.png" alt="Cashboard Expense Classifier Logo" width="300"/>
+  <img src="static/landscape_logo.png" alt="Cashboard Expense Classifier Logo" width="300"/>
 </p>
 
 
