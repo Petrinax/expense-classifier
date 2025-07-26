@@ -7,7 +7,6 @@
   <img src="static/landscape_logo.png" alt="Cashboard Expense Classifier Logo" width="300"/>
 </p>
 
-
 <p align="center">
   <a href="https://github.com/petrinax/expense-classifier"><img src="https://img.shields.io/badge/Status-Under%20Development-orange" alt="Under Development"/></a>
   <a href="https://en.wikipedia.org/wiki/Extract,_transform,_load"><img src="https://img.shields.io/badge/ETL-Finance-blue" alt="ETL Finance"/></a>
