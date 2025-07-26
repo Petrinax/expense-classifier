@@ -1,12 +1,12 @@
 # Cashboard: Expense Classifier
 
 
-## Overview
-A robust, extensible Python solution for automated expense classification, enrichment, and reporting from **UPI-heavy bank statements**. Built to learn, adapt, and makes expense tracking a breeze.
-
 <p align="center">
   <img src="static/landscape_logo.png" alt="Cashboard Expense Classifier Logo" width="300"/>
 </p>
+
+
+**Cashboard** is a robust, extensible Python solution for automated expense classification, enrichment, and reporting from **UPI-heavy bank statements**. Built to learn, adapt, and makes expense tracking a breeze.
 
 
 <p align="center">
