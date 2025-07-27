@@ -8,22 +8,21 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/petrinax/expense-classifier"><img src="https://img.shields.io/badge/Status-Under%20Development-orange" alt="Under Development"/></a>
-  <a href="https://en.wikipedia.org/wiki/Extract,_transform,_load"><img src="https://img.shields.io/badge/ETL-Finance-blue" alt="ETL Finance"/></a>
-  <a href="https://en.wikipedia.org/wiki/Command-line_interface"><img src="https://img.shields.io/badge/CLI-Tool-green" alt="CLI Tool"/></a>
-  <a href="https://pandas.pydata.org/"><img src="https://img.shields.io/badge/Data%20Engineering-pandas-informational" alt="pandas"/></a>
-  <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/Python-3.9%2B-blueviolet" alt="Python 3.9+"/></a>
-  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow" alt="MIT License"/></a>
+  <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.9+"/></a>
+  <a href="https://github.com/petrinax/expense-classifier"><img src="https://img.shields.io/badge/Status-Under%20Development-orange?style=for-the-badge" alt="Under Development"/></a>
+  <a href="https://pandas.pydata.org/"><img src="https://img.shields.io/badge/Pandas-2.2%2B-2C2D72?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas"/></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License"/></a>
   <!-- TBD: Add PyPI badge-->
 </p>
 
 **Tags:**  
-`expense-classifier` `ETL` `finance` `data-engineering` `pandas` `SQLAlchemy` `CLI` `bank-statements` `classification` `reporting` `python` `personal-finance` `automation`
+ `ETL` `finance` `data-engineering` `SQLAlchemy` `CLI` `bank-statements` `classification` `reporting` `personal-finance` `automation`
 
 
 <p align="center">
 <a href="https://www.linkedin.com/in/piyush-upreti/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="https://github.com/petrinax"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+<a href="https://medium.com/@piyushupreti07"><img src="https://img.shields.io/badge/Medium-wheat?style=for-the-badge&logo=medium&logoColor=black" alt="Medium"/></a>
 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=piyushupreti07@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
 </p>
 
